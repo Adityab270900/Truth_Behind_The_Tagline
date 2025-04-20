@@ -106,3 +106,4 @@ class RAGEngine:
         
         logger.info(f"Retrieved {len(results)} evidence items for claim")
         return results
+
