@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body p-4">
+                <h1 class="card-title text-center mb-4">
+                    <i class="fas fa-magnifying-glass-chart me-2 text-primary"></i>
+                    Truth Behind the Tagline
+                </h1>
+                <h4 class="text-center text-secondary mb-4">AI-Powered Marketing Claim Verification for Indian Markets</h4>
+                
+                <div class="alert alert-info">
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <i class="fas fa-info-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="alert-heading">How it works</h5>
+                            <p>Enter an Indian brand name, its tagline, and a specific marketing claim you'd like to verify. Our AI system will analyze the claim against verified evidence and provide a fact-based assessment.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="{{ url_for('analyze') }}" method="post" class="mt-4">
+                    <div class="form-group mb-3">
+                        <label for="brand_name" class="form-label">Brand Name</label>
+                        <input type="text" class="form-control" id="brand_name" name="brand_name" placeholder="e.g., Patanjali, Dabur, Amul" required>
+                        <div class="form-text">Enter an Indian brand or company name</div>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label for="tagline" class="form-label">Tagline or Slogan</label>
+                        <input type="text" class="form-control" id="tagline" name="tagline" placeholder="e.g., 'Taste the Thunder', 'Pure Ayurveda'" required>
+                        <div class="form-text">Enter the brand's tagline or marketing slogan</div>
+                    </div>
+                    
+                    <div class="form-group mb-4">
+                        <label for="claim" class="form-label">Marketing Claim to Verify</label>
+                        <textarea class="form-control" id="claim" name="claim" rows="3" placeholder="e.g., 'Reduces cholesterol by 30% in 2 weeks', 'Made with 100% natural ingredients'" required></textarea>
+                        <div class="form-text">Enter a specific claim made by the brand that you want to fact-check</div>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary py-2">
+                            <i class="fas fa-search me-2"></i> Analyze Claim
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Sample Claims Section -->
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Popular Indian Marketing Claims</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action sample-claim" 
+                                    data-brand="Patanjali" 
+                                    data-tagline="Pure Ayurveda for Everyone" 
+                                    data-claim="Divya Coronil Kit cures COVID-19 in 7 days">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>Patanjali</strong>
+                                    <span class="badge bg-warning">Health</span>
+                                </div>
+                                <p class="mb-1 text-truncate">Divya Coronil Kit cures COVID-19 in 7 days</p>
+                            </button>
+                            
+                            <button type="button" class="list-group-item list-group-item-action sample-claim" 
+                                    data-brand="Dabur" 
+                                    data-tagline="Celebrates Purity" 
+                                    data-claim="Dabur Chyawanprash increases immunity by 3 times">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>Dabur</strong>
+                                    <span class="badge bg-warning">Health</span>
+                                </div>
+                                <p class="mb-1 text-truncate">Dabur Chyawanprash increases immunity by 3 times</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action sample-claim" 
+                                    data-brand="Fair & Lovely" 
+                                    data-tagline="Advanced Multivitamin" 
+                                    data-claim="Scientifically proven to deliver fairness in 4 weeks">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>Fair & Lovely</strong>
+                                    <span class="badge bg-info">Beauty</span>
+                                </div>
+                                <p class="mb-1 text-truncate">Scientifically proven to deliver fairness in 4 weeks</p>
+                            </button>
+                            
+                            <button type="button" class="list-group-item list-group-item-action sample-claim" 
+                                    data-brand="Amul" 
+                                    data-tagline="The Taste of India" 
+                                    data-claim="Amul milk contains no preservatives or additives">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>Amul</strong>
+                                    <span class="badge bg-success">Food</span>
+                                </div>
+                                <p class="mb-1 text-truncate">Amul milk contains no preservatives or additives</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

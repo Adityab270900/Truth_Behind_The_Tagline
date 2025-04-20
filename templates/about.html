@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body p-4">
+                <h1 class="card-title mb-4 text-center">About Truth Behind the Tagline</h1>
+                
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <h4 class="mb-3">Our Mission</h4>
+                        <p>
+                            Truth Behind the Tagline (TBT) is an AI-powered system designed to analyze marketing claims, taglines, and slogans from Indian brands to uncover the real story behind them. By combining cutting-edge NLP technology with domain research, TBT delivers transparent, data-driven insights so consumers can make informed decisions.
+                        </p>
+                        <p>
+                            Our mission is to promote transparency in advertising and empower Indian consumers with factual information about the products they use daily. We believe in holding companies accountable for their marketing claims through objective analysis and evidence-based verification.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <h4 class="mb-3">How It Works</h4>
+                        <div class="card bg-light mb-3">
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="p-3">
+                                            <i class="fas fa-file-import fa-2x text-primary mb-3"></i>
+                                            <h5>Claim Ingestion</h5>
+                                            <p class="small">We analyze the brand name, tagline, and specific marketing claim.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="p-3">
+                                            <i class="fas fa-database fa-2x text-primary mb-3"></i>
+                                            <h5>Evidence Retrieval</h5>
+                                            <p class="small">Our system searches for relevant evidence from trusted sources.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="p-3">
+                                            <i class="fas fa-brain fa-2x text-primary mb-3"></i>
+                                            <h5>AI Analysis</h5>
+                                            <p class="small">Advanced NLP models evaluate claims against evidence.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="p-3">
+                                            <i class="fas fa-check-double fa-2x text-primary mb-3"></i>
+                                            <h5>Verdict</h5>
+                                            <p class="small">We provide a clear assessment with supporting evidence.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <h4 class="mb-3">Technology Behind TBT</h4>
+                        <p>
+                            Our system leverages state-of-the-art Natural Language Processing (NLP) technology and Retrieval-Augmented Generation (RAG) to analyze marketing claims:
+                        </p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>HuggingFace Transformers:</strong> We use advanced language models optimized for Indian English and multilingual content.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>RAG System:</strong> Combines neural search with Indian market-specific knowledge base.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Indian Regulatory Framework:</strong> Our analysis considers ASCI guidelines and other Indian regulatory standards.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Indic NLP Support:</strong> Special processing for Indian languages and mixed-language content.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="mb-3">Evidence Sources</h4>
+                        <p>
+                            Our system draws from a diverse range of trusted sources relevant to the Indian market:
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-gavel text-primary me-2"></i>Regulatory</h5>
+                                        <ul class="list-unstyled">
+                                            <li>FSSAI Regulations</li>
+                                            <li>ASCI Guidelines</li>
+                                            <li>Indian Medical Council</li>
+                                            <li>Ministry of AYUSH</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-microscope text-primary me-2"></i>Scientific</h5>
+                                        <ul class="list-unstyled">
+                                            <li>Indian Medical Journals</li>
+                                            <li>ICMR Research</li>
+                                            <li>CSIR Labs</li>
+                                            <li>Academic Publications</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-newspaper text-primary me-2"></i>Consumer Reports</h5>
+                                        <ul class="list-unstyled">
+                                            <li>Consumer Voice</li>
+                                            <li>Indian Consumer Forums</li>
+                                            <li>Product Testing Labs</li>
+                                            <li>RTI Disclosures</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

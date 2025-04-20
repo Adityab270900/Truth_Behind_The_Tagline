@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <!-- Back button -->
+        <div class="mb-3">
+            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left me-2"></i> Back to Search
+            </a>
+        </div>
+        
+        <!-- Results card -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center py-3">
+                <h4 class="mb-0">Analysis Results</h4>
+                <span class="badge 
+                      {% if results.verdict == '✅ Substantiated' %}
+                        bg-success
+                      {% elif results.verdict == '⚠️ Partially True' %}
+                        bg-warning
+                      {% else %}
+                        bg-danger
+                      {% endif %}
+                      p-2">{{ results.verdict }}</span>
+            </div>
+            <div class="card-body p-4">
+                <!-- Claim details -->
+                <div class="claim-details mb-4">
+                    <h5 class="border-bottom pb-2 mb-3">Brand Information</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="text-muted mb-1">Brand Name</p>
+                            <p class="fw-bold">{{ results.brand_name }}</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted mb-1">Tagline</p>
+                            <p class="fw-bold">{{ results.tagline }}</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3 mt-4">Marketing Claim</h5>
+                    <div class="p-3 bg-light rounded">
+                        <blockquote class="blockquote mb-0">
+                            <p>"{{ results.claim }}"</p>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- Analysis visualization -->
+                <div class="analysis-visualization mb-4">
+                    <h5 class="border-bottom pb-2 mb-3">Truthfulness Score</h5>
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="progress" style="height: 25px;">
+                                <div class="progress-bar 
+                                    {% if results.score >= 0.7 %}
+                                        bg-success
+                                    {% elif results.score >= 0.4 %}
+                                        bg-warning
+                                    {% else %}
+                                        bg-danger
+                                    {% endif %}" 
+                                    role="progressbar" 
+                                    style="width: {{ results.score * 100 }}%;" 
+                                    aria-valuenow="{{ results.score * 100 }}" 
+                                    aria-valuemin="0" 
+                                    aria-valuemax="100">
+                                    {{ "%.0f"|format(results.score * 100) }}%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="verdict-icon">
+                                {% if results.score >= 0.7 %}
+                                    <i class="fas fa-check-circle fa-3x text-success"></i>
+                                {% elif results.score >= 0.4 %}
+                                    <i class="fas fa-exclamation-triangle fa-3x text-warning"></i>
+                                {% else %}
+                                    <i class="fas fa-times-circle fa-3x text-danger"></i>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Explanation -->
+                <div class="explanation mb-4">
+                    <h5 class="border-bottom pb-2 mb-3">Analysis Explanation</h5>
+                    <div class="card">
+                        <div class="card-body">
+                            {{ results.explanation|safe|replace('\n', '<br>')|replace('- ', '<li>')|replace('\n- ', '</li><li>')|replace('\n\n', '</li></ul><p>')|replace(':\n', ':</p><ul>') }}
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Evidence -->
+                <div class="evidence">
+                    <h5 class="border-bottom pb-2 mb-3">Evidence Used</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Source</th>
+                                    <th>Evidence</th>
+                                    <th>Relevance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in results.evidence %}
+                                <tr>
+                                    <td>
+                                        <strong>{{ item.metadata.source }}</strong>
+                                        {% if item.metadata.publication_date %}
+                                        <br><small class="text-muted">{{ item.metadata.publication_date }}</small>
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ item.text|truncate(150) }}</td>
+                                    <td>
+                                        <div class="progress" style="height: 10px; width: 60px;">
+                                            <div class="progress-bar bg-info" 
+                                                role="progressbar" 
+                                                style="width: {{ item.relevance_score * 100 }}%;" 
+                                                aria-valuenow="{{ item.relevance_score * 100 }}" 
+                                                aria-valuemin="0" 
+                                                aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                        <small>{{ "%.0f"|format(item.relevance_score * 100) }}%</small>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Disclaimer -->
+                <div class="disclaimer mt-4">
+                    <div class="alert alert-secondary">
+                        <small>
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Disclaimer:</strong> This analysis is based on available evidence and AI processing. Results should be verified with additional sources. The system continues to learn and improve over time.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
