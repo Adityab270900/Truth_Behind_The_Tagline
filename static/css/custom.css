@@ -1,0 +1,72 @@
+/* Custom CSS styles to complement the Bootstrap theme */
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: rgba(33, 37, 41, 0.5);
+}
+
+/* Animation for verdict icons */
+.verdict-icon i {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+}
+
+/* Styling for claim badges */
+.badge {
+    padding: 0.5em 0.8em;
+    font-weight: 500;
+}
+
+/* Custom styling for sample claims */
+.sample-claim {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.sample-claim:hover {
+    border-left: 3px solid var(--bs-primary);
+    transform: translateX(3px);
+}
+
+/* Custom styling for blockquotes */
+blockquote {
+    border-left: 3px solid var(--bs-primary);
+    padding-left: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .verdict-icon {
+        margin-top: 1rem;
+    }
+}
