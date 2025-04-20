@@ -1,0 +1,26 @@
+{
+  "general": {
+    "asci_code": "The Advertising Standards Council of India (ASCI) Code states that advertisements must be truthful and not mislead consumers through ambiguity, exaggeration, or omission. Claims require adequate substantiation.",
+    "consumer_protection_act": "Under the Consumer Protection Act of 2019, misleading advertisements that falsely describe a product or give false guarantees are prohibited and can result in penalties."
+  },
+  "food": {
+    "fssai_guidelines": "Food Safety and Standards Authority of India (FSSAI) regulations prohibit misleading descriptions, claims, or illustrations about food products. Health claims must be scientifically substantiated.",
+    "packaging_regulations": "FSSAI Packaging Regulations mandate truthful representation of ingredients, requiring clear disclosure of preservatives, additives, and nutritional information.",
+    "organic_certification": "Products labeled as 'organic' must be certified under the National Programme for Organic Production (NPOP) or PGS-India (Participatory Guarantee System)."
+  },
+  "beauty": {
+    "cosmetic_rules": "Drugs and Cosmetics Rules, 1945 (as amended) require that cosmetic products must not claim to cure or prevent any disease, which includes transformative skin changes.",
+    "bsis_standards": "Bureau of Indian Standards (BIS) certification is mandatory for certain cosmetic products, ensuring they meet safety and quality parameters.",
+    "asci_fairness_guidelines": "ASCI guidelines specifically prohibit advertisements that suggest skin color preferences or depict people with darker skin negatively."
+  },
+  "health": {
+    "ayush_regulations": "Ministry of AYUSH regulations require proper licensing and evidence before making specific health claims for Ayurvedic, Siddha, Unani, or Homeopathic products.",
+    "drug_advertising_rules": "The Drugs and Magic Remedies (Objectionable Advertisements) Act prohibits advertising of remedies claiming to cure specific diseases or conditions listed in the Act.",
+    "clinical_substantiation": "Health claims must be backed by credible clinical studies following recognized research methodologies and appropriate sample sizes."
+  },
+  "tech": {
+    "telecom_standards": "Telecom Regulatory Authority of India (TRAI) requires telecommunications providers to be transparent about data speeds, network coverage, and service limitations.",
+    "electronic_product_standards": "Electronics and IT products must comply with BIS certification and indicate country of origin, assembly, and component sourcing when making 'Made in India' claims.",
+    "battery_life_claims": "Claims about battery performance must be based on standardized testing protocols and disclose the specific conditions under which the claims are valid."
+  }
+}

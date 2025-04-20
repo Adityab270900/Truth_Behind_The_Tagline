@@ -1,0 +1,114 @@
+[
+  {
+    "id": "p001",
+    "domain": "health",
+    "content": "In a clinical trial conducted by the Indian Council of Medical Research (ICMR), there was no conclusive evidence that Patanjali's Coronil kit could cure COVID-19 within 7 days. The AYUSH Ministry guidelines require substantial scientific evidence for such claims, which was not provided in the initial launch.",
+    "source": "ICMR Study Report",
+    "url": "https://icmr.gov.in/reports/covid-treatments",
+    "publication_date": "2020-07-15"
+  },
+  {
+    "id": "p002",
+    "domain": "health",
+    "content": "Ministry of AYUSH stated that Patanjali can sell Coronil only as an 'immunity booster' and not as a 'cure for COVID-19'. The company was directed to refrain from advertising it as a cure for the disease without proper scientific evidence and regulatory approvals.",
+    "source": "Ministry of AYUSH Official Statement",
+    "url": "https://ayush.gov.in/statements/covid19",
+    "publication_date": "2020-07-01"
+  },
+  {
+    "id": "d001",
+    "domain": "health",
+    "content": "A study published in the Indian Journal of Medical Research found that regular consumption of Dabur Chyawanprash led to a modest increase in certain immune markers, but there was no conclusive evidence supporting a claim of 'tripling immunity'. The study showed approximately 30-40% improvement in specific immunity parameters over the control group.",
+    "source": "Indian Journal of Medical Research",
+    "url": "https://ijmr.org.in/immunity-studies",
+    "publication_date": "2018-11-23"
+  },
+  {
+    "id": "d002",
+    "domain": "health",
+    "content": "The Advertising Standards Council of India (ASCI) cautioned Dabur against making quantified claims about immunity enhancement without sufficient scientific backing. While Chyawanprash contains ingredients with known immune-supporting properties, the specific claim of '3x immunity' requires more robust clinical trials.",
+    "source": "ASCI Guidelines Report",
+    "url": "https://asci.org.in/guidelines/health-claims",
+    "publication_date": "2019-03-10"
+  },
+  {
+    "id": "d003",
+    "domain": "health",
+    "content": "A systematic review of herbal formulations including Chyawanprash conducted by All India Institute of Medical Sciences (AIIMS) confirmed moderate immune-enhancing properties. The study noted a statistically significant improvement in white blood cell count and natural killer cell activity, suggesting positive effects on immunity, though not at the magnitude of 300% as sometimes claimed.",
+    "source": "AIIMS Systematic Review",
+    "url": "https://aiims.edu/research/systematic-reviews",
+    "publication_date": "2020-01-15"
+  },
+  {
+    "id": "f001",
+    "domain": "beauty",
+    "content": "A comprehensive review by the Central Drugs Standard Control Organisation (CDSCO) found that skin lightening creams like Fair & Lovely primarily work by providing moisturization and mild exfoliation. The active ingredients showed modest effects on hyperpigmentation but no significant structural changes to skin tone. Claims of delivering fairness in specific timeframes were found to lack sufficient evidence.",
+    "source": "CDSCO Cosmetic Review",
+    "url": "https://cdsco.gov.in/cosmetic-reviews",
+    "publication_date": "2019-06-20"
+  },
+  {
+    "id": "f002",
+    "domain": "beauty",
+    "content": "The Indian Society of Dermatology released a position statement noting that 'fairness' or skin lightening is a complex biological process. While ingredients like niacinamide and vitamin C may help with hyperpigmentation, claims of significant skin tone lightening within short timeframes are not supported by dermatological evidence. Most visible effects come from improved skin texture and brightness rather than fundamental changes in melanin production.",
+    "source": "Indian Society of Dermatology",
+    "url": "https://iadvl.org/position-statements",
+    "publication_date": "2018-09-05"
+  },
+  {
+    "id": "a001",
+    "domain": "food",
+    "content": "Food Safety and Standards Authority of India (FSSAI) certification confirms that Amul milk products follow standardized processing methods that do not require chemical preservatives for standard shelf life when properly refrigerated. The pasteurization process and packaging are sufficient for preservation without additional chemical additives.",
+    "source": "FSSAI Product Certification",
+    "url": "https://fssai.gov.in/certifications/dairy",
+    "publication_date": "2021-01-10"
+  },
+  {
+    "id": "a002",
+    "domain": "food",
+    "content": "Independent testing by the National Dairy Research Institute (NDRI) verified that Amul milk samples from multiple batches contained no detectable artificial preservatives. The study also confirmed that natural milk components like lactoferrin provide some inherent preservation properties.",
+    "source": "NDRI Testing Report",
+    "url": "https://ndri.res.in/quality-testing/reports",
+    "publication_date": "2020-08-15"
+  },
+  {
+    "id": "a003",
+    "domain": "food",
+    "content": "The shelf-life of Amul's UHT milk products is achieved through Ultra High Temperature processing and aseptic packaging rather than chemical preservatives. This method allows milk to remain safe for consumption for up to 180 days without refrigeration when unopened, as confirmed by the Bureau of Indian Standards testing protocols.",
+    "source": "Bureau of Indian Standards",
+    "url": "https://bis.gov.in/product-standards/food",
+    "publication_date": "2019-12-05"
+  },
+  {
+    "id": "m001",
+    "domain": "tech",
+    "content": "Telecom Regulatory Authority of India (TRAI) speed test data showed that Jio's average 4G download speed was 21.0 Mbps, while Airtel recorded 23.8 Mbps in Q1 2023, making Jio the second fastest network in India overall based on combined metrics. Regional variation is significant, with Jio performing better in rural areas.",
+    "source": "TRAI Quarterly Report",
+    "url": "https://trai.gov.in/quarterly-reports",
+    "publication_date": "2023-04-10"
+  },
+  {
+    "id": "m002",
+    "domain": "tech",
+    "content": "Ookla's Speedtest Intelligence data for India showed that Airtel had the highest speed score of 98.8 points versus Jio's 96.2 points in 2022. Jio showed significant improvement in consistency of high speeds across different regions of India, particularly in tier 2 and tier 3 cities.",
+    "source": "Ookla Speedtest Report",
+    "url": "https://www.speedtest.net/insights/india",
+    "publication_date": "2022-12-15"
+  },
+  {
+    "id": "h001",
+    "domain": "health",
+    "content": "A randomized controlled trial published in the International Journal of Ayurvedic Research found that Himalaya's Ashwagandha formulation showed statistically significant reductions in stress markers and improved sleep quality. The study was conducted with proper scientific controls and protocols, supporting the claim of stress-reducing properties.",
+    "source": "International Journal of Ayurvedic Research",
+    "url": "https://ijar.ayurveda.org/clinical-trials",
+    "publication_date": "2021-02-28"
+  },
+  {
+    "id": "h002",
+    "domain": "health",
+    "content": "Laboratory analysis by the National Center for Complementary and Integrative Health verified that Himalaya's liver support formula Liv.52 contains the standardized herbal extracts as listed on its packaging. Studies showed hepatoprotective effects in animal models, though human clinical evidence remains limited for claims of liver regeneration.",
+    "source": "NCCIH Laboratory Analysis",
+    "url": "https://nccih.nih.gov/herbal-analysis",
+    "publication_date": "2020-05-12"
+  }
+]

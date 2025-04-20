@@ -1,0 +1,169 @@
+{
+  "categories": [
+    {
+      "name": "Food & Beverage",
+      "brands": [
+        {
+          "name": "Amul",
+          "taglines": [
+            "The Taste of India",
+            "Utterly Butterly Delicious"
+          ],
+          "common_claims": [
+            "100% pure milk",
+            "No preservatives added",
+            "Rich source of calcium"
+          ]
+        },
+        {
+          "name": "Parle-G",
+          "taglines": [
+            "G means Genius",
+            "India ka Apna Biscuit"
+          ],
+          "common_claims": [
+            "Provides essential nutrients",
+            "Gives instant energy",
+            "Made with high-quality ingredients"
+          ]
+        },
+        {
+          "name": "MDH",
+          "taglines": [
+            "Asli Masale Sach Sach",
+            "Taste the aroma of quality"
+          ],
+          "common_claims": [
+            "100% pure spices",
+            "No artificial colors",
+            "Authentic traditional recipes"
+          ]
+        },
+        {
+          "name": "Haldiram's",
+          "taglines": [
+            "Taste of tradition",
+            "India's favorite snack"
+          ],
+          "common_claims": [
+            "Made from premium ingredients",
+            "No trans-fat",
+            "Authentic traditional taste"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Health & Wellness",
+      "brands": [
+        {
+          "name": "Patanjali",
+          "taglines": [
+            "Pure Ayurveda for Everyone",
+            "Prakriti ka Ashirwad"
+          ],
+          "common_claims": [
+            "100% natural and herbal",
+            "Chemical-free products",
+            "Based on ancient Ayurvedic formulations",
+            "Divya Coronil Kit cures COVID-19 in 7 days"
+          ]
+        },
+        {
+          "name": "Dabur",
+          "taglines": [
+            "Celebrates Purity",
+            "Trust of Generations"
+          ],
+          "common_claims": [
+            "Based on ancient Ayurvedic formulations",
+            "Dabur Chyawanprash increases immunity by 3 times",
+            "Protects from 100+ illnesses"
+          ]
+        },
+        {
+          "name": "Himalaya",
+          "taglines": [
+            "Science of Herbal",
+            "Where Ayurveda meets Science"
+          ],
+          "common_claims": [
+            "Clinically tested",
+            "Scientifically validated herbal products",
+            "Drug-free formulations"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Beauty & Personal Care",
+      "brands": [
+        {
+          "name": "Fair & Lovely",
+          "taglines": [
+            "Advanced Multivitamin",
+            "Nikhar jo nikhare aapki kismat"
+          ],
+          "common_claims": [
+            "Scientifically proven to deliver fairness",
+            "Visible fairness in 4 weeks",
+            "Niacinamide formula for smooth and bright skin"
+          ]
+        },
+        {
+          "name": "Lakme",
+          "taglines": [
+            "Reinvent beauty",
+            "India's first cosmetic brand"
+          ],
+          "common_claims": [
+            "9 to 5 stay",
+            "Dermatologically tested",
+            "High-definition makeup"
+          ]
+        },
+        {
+          "name": "Santoor",
+          "taglines": [
+            "Santoor woman beauty soap",
+            "Haldi and Chandan ka tyohaar"
+          ],
+          "common_claims": [
+            "Natural goodness of Sandalwood",
+            "Younger looking skin",
+            "Traditional herbs for beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Technology & Electronics",
+      "brands": [
+        {
+          "name": "Micromax",
+          "taglines": [
+            "Nothing like anything",
+            "India ka smartphone"
+          ],
+          "common_claims": [
+            "Made in India",
+            "Longest battery life",
+            "Military grade durability"
+          ]
+        },
+        {
+          "name": "Jio",
+          "taglines": [
+            "Digital Life",
+            "Desh ki digital udaan"
+          ],
+          "common_claims": [
+            "India's fastest network",
+            "Truly unlimited data",
+            "Most affordable 5G"
+          ]
+        }
+      ]
+    }
+  ]
+}
